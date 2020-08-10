@@ -17,6 +17,7 @@ class CreateOrderItemsTable extends Migration
             $table->id();
             $table->foreignId('order_id');
             $table->foreignId('product_id');
+            $table->integer('quantity');
         });
     }
 
